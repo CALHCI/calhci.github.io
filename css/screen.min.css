@@ -320,7 +320,7 @@ a:hover {
     margin-left: -100px;
     margin-top: -60px;
     text-align: center;
-    color: #ffa726;
+    color: #154734;
     font-size: 120px;
     line-height: 120px;
     font-family: "Open Sans", Tahoma, Verdana, Arial, sans-serif
@@ -339,7 +339,7 @@ a:hover {
     left: 0;
     height: 40px;
     overflow: hidden;
-    background-color: #ffa726;
+    background-color: #154734;
     width: 100%;
     margin: 0 0;
     clear:both
@@ -470,7 +470,7 @@ a:hover {
     letter-spacing: -5px;
     font-weight: 700;
     text-align: center;
-    background-color: #ffa726;
+    background-color: #154734;
     border: 0;
     -webkit-box-shadow: inset 0 1px 2px -1px #2c3e50;
     box-shadow:inset 0 1px 2px -1px #2c3e50
@@ -482,7 +482,7 @@ a:hover {
     bottom: -29px;
     left: 0;
     z-index: 250;
-    border-top: 30px solid #ffa726;
+    border-top: 30px solid #154734;
     border-left: 40px solid transparent;
     border-right:40px solid transparent
 }
@@ -645,7 +645,7 @@ a:hover {
 
 .about-card__header {
     padding: 20px;
-    background-color:#ffa726
+    background-color:#154734
 }
 
 .about-card__header h2, .about-card__header h4 {
@@ -719,13 +719,13 @@ a:hover {
 }
 
 .services__item:hover:before {
-    color:#ffa726
+    color:#154734
 }
 
 .advantages {
     text-align: center;
-    border-left: 10px solid #ffa726;
-    border-right: 10px solid #ffa726;
+    border-left: 10px solid #154734;
+    border-right: 10px solid #154734;
     float: left;
     width: 98%;
     width: calc(100% - 40px);
@@ -751,7 +751,7 @@ a:hover {
     display: block;
     width: 30%;
     height: 10px;
-    background-color:#ffa726
+    background-color:#154734
 }
 
 .advantages h2:before {
@@ -764,7 +764,7 @@ a:hover {
 
 .advantages blockquote {
     padding: 40px 0;
-    border-bottom:10px solid #ffa726
+    border-bottom:10px solid #154734
 }
 
 .advantages blockquote p, .advantages blockquote cite {
@@ -850,11 +850,11 @@ a:hover {
 }
 
 .process__step:hover > .process__step-icon, .process__step:hover > .process__step-icon.is-active {
-    border-color:#ffa726
+    border-color:#154734
 }
 
 .process__step:hover > .process__step-icon:before, .process__step:hover > .process__step-icon.is-active:before {
-    text-shadow:-1px -1px 0 #ffa726, 0 -1px 0 #ffa726, 1px -1px 0 #ffa726, 1px 0 0 #ffa726, 1px 1px 0 #ffa726, 0 1px 0 #ffa726, -1px 1px 0 #ffa726, -1px 0 0 #ffa726
+    text-shadow:-1px -1px 0 #154734, 0 -1px 0 #154734, 1px -1px 0 #154734, 1px 0 0 #154734, 1px 1px 0 #154734, 0 1px 0 #154734, -1px 1px 0 #154734, -1px 0 0 #154734
 }
 
 .process__step:hover + .process__step-info {
@@ -912,11 +912,11 @@ a:hover {
 }
 
 .process__step-icon.is-active {
-    border-color:#ffa726
+    border-color:#154734
 }
 
 .process__step-icon.is-active:before {
-    text-shadow:-1px -1px 0 #ffa726, 0 -1px 0 #ffa726, 1px -1px 0 #ffa726, 1px 0 0 #ffa726, 1px 1px 0 #ffa726, 0 1px 0 #ffa726, -1px 1px 0 #ffa726, -1px 0 0 #ffa726
+    text-shadow:-1px -1px 0 #154734, 0 -1px 0 #154734, 1px -1px 0 #154734, 1px 0 0 #154734, 1px 1px 0 #154734, 0 1px 0 #154734, -1px 1px 0 #154734, -1px 0 0 #154734
 }
 
 .process__step-info {
@@ -929,7 +929,7 @@ a:hover {
     margin: 40px 0 50px;
     padding: 10px;
     background-color: #ecf0f1;
-    border-top: 10px solid #ffa726;
+    border-top: 10px solid #154734;
     -webkit-box-shadow: 2px 2px 4px -2px #2c3e50;
     box-shadow:2px 2px 4px -2px #2c3e50
 }
@@ -948,7 +948,7 @@ a:hover {
     top: -40px;
     left: 12.5%;
     margin-left: -40px;
-    border-bottom: 40px solid #ffa726;
+    border-bottom: 40px solid #154734;
     border-left: 40px solid transparent;
     border-right:40px solid transparent
 }
@@ -1015,26 +1015,28 @@ a:hover {
 .projects__item {
     float: left;
     width: 25%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto; /* Center horizontally */
     height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
     position: relative;
-    height: 0;
     padding-bottom: 18.75%;
-    overflow:hidden
+    overflow: hidden;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .projects__item img {
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center image */
     display: block;
-    width: 100%;
-    margin:0
+    width: auto; /* Adjust width if necessary */
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
 }
+
 
 .projects__item figcaption {
     position: absolute;
@@ -1066,7 +1068,7 @@ a:hover {
     display: inline-block;
     width: 90%;
     font-size: 25px;
-    color: #ffa726;
+    color: #154734;
     vertical-align: middle;
     white-space: normal;
     border-bottom:none
@@ -1135,7 +1137,7 @@ a:hover {
     top: -5px;
     left: -25px;
     font-size: 20px;
-    color:#ffa726
+    color:#154734
 }
 
 .testimonials__item blockquote cite {
@@ -1146,7 +1148,7 @@ a:hover {
 }
 
 .testimonials__item blockquote cite span.name {
-    color:#ffa726
+    color:#154734
 }
 
 .testimonials__item blockquote cite span.role {
@@ -1179,7 +1181,7 @@ a:hover {
 
 .contact-card__header {
     padding: 20px;
-    background-color:#ffa726
+    background-color:#154734
 }
 
 .contact-card__header h2, .contact-card__header h4 {
@@ -1197,7 +1199,7 @@ a:hover {
 
 .contact-info__logo {
     display: inline-block;
-    color: #ffa726;
+    color: #154734;
     font-size: 80px;
     line-height: 60px;
     letter-spacing: -5px;
@@ -1240,7 +1242,7 @@ a:hover {
     width: 25px;
     height: 25px;
     border: 0;
-    vertical-align:top
+    
 }
 
 .contact-info__vcard a {
@@ -1340,7 +1342,7 @@ a:hover {
     position: relative;
     z-index: 100;
     width: 100%;
-    background-color: #ffa726;
+    background-color: #154734;
     color: #ecf0f1;
     -webkit-box-shadow: 0 -2px 2px -1px #2c3e50;
     box-shadow:0 -2px 2px -1px #2c3e50
@@ -1352,7 +1354,7 @@ a:hover {
     top: -30px;
     left: 50%;
     margin-left: -40px;
-    border-bottom: 40px solid #ffa726;
+    border-bottom: 40px solid #154734;
     border-left: 40px solid transparent;
     border-right:40px solid transparent
 }
@@ -1607,23 +1609,6 @@ a:hover {
         font-size:18px
     }
 
-    .testimonials {
-        float: left;
-        width: 98%;
-        width: calc(100% - 40px);
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-left: calc(20px);
-        margin-right: calc(20px);
-        height: auto;
-        margin-top: 0;
-        margin-bottom:0
-    }
-
-    .testimonials__item {
-        margin-bottom:20px
-    }
-
     .contacts-section {
         padding-top:250px
     }
@@ -1773,11 +1758,32 @@ a:hover {
         padding-bottom:75%
     }
 
-    .testimonials__item img {
-        display:none
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
+    
+    .team__item {
+        flex: 1 1 200px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .team__item img {
+        max-width: 200px; /* Limit the width of the images */
+        height: auto;
+        border-radius: 50%; /* Optional: make images circular */
+        margin-bottom: 10px;
+    }
+    
+    
 
-    .testimonials__item blockquote {
-        margin-left: 0
-    }
+  
 }
