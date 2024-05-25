@@ -449,7 +449,9 @@ a:hover {
     clear: both;
     height:0
 }
-
+.second-nav.is-open {
+    display: block;
+}
 .second-nav.is-closed {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
