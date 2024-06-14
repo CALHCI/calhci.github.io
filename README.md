@@ -39,15 +39,6 @@ Before you begin, ensure you have met the following requirements:
 
 - You have a GitHub account.
 
-### Installation
-
-1. Clone the repository:
-
-    git clone https://github.com/calhci/calhci.github.io.git
-    cd calhci.github.io
-    ```
-
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
