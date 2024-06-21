@@ -382,7 +382,7 @@ a:hover {
 }
 
 .first-nav__languages a.is-selected, .first-nav__languages a:hover, .first-nav__links a.is-selected, .first-nav__links a:hover {
-    color: #2c3e50;
+    color: #fafafa;
     border:0
 }
 
@@ -410,7 +410,7 @@ a:hover {
 .first-nav__navcontrol:before {
     display: inline-block;
     margin-right: 10px;
-    color: #ecf0f1;
+    color: #2f5e4c;
     font-size: 20px;
     -webkit-transition: color .5s;
     -o-transition: color .5s;
